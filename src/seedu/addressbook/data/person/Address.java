@@ -42,6 +42,14 @@ public class Address extends Contact {
         postalCode = new PostalCode(addressSplit[3]);
     }
     
+    
+    //Alternatively, use StringBuilder
+    public String getPrintableString(){
+    	String string = new String();
+    	string = "Address: " + this.value; 
+    	return string;
+    	
+    }
 
 
     /**

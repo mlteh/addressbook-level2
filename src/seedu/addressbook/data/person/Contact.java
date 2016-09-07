@@ -21,6 +21,14 @@ public class Contact {
                 || (other instanceof Phone // instanceof handles nulls
                 && this.value.equals(((Contact) other).value)); // state check
     }
+    
+    //Alternatively, use StringBuilder
+    public String getPrintableString(){
+    	String string = new String();
+    	string = "Contact: " + this.value; 
+    	return string;
+    	
+    }
 
     @Override
     public int hashCode() {
