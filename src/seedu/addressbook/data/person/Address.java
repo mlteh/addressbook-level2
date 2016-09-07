@@ -31,7 +31,7 @@ public class Address {
         this.isPrivate = isPrivate;
         if (!isValidAddress(address)) {
             throw new IllegalValueException(MESSAGE_ADDRESS_CONSTRAINTS);
-        }
+        }	
         this.value = address;
         
         // address is split to this format a/123, Clementi Ave 3, #12-34, 231534 
